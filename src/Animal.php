@@ -2,9 +2,9 @@
 namespace App;// {
     abstract class Animal
     {
-        private string $name = "";
+        private string $name = ""; // Le nom de l'animal
 
-        public function getName():string
+        public function getName():string // Permet de récupérer son nom
         {
             return $this->name;
         }
@@ -16,7 +16,7 @@ namespace App;// {
 
         protected abstract function getNoise():string;
 
-        public function Noise():string
+        public function Noise():string // Retourne le cri de l'animal
         {
             return $this->getNoise();
         }

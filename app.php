@@ -32,7 +32,18 @@ $animals = [new Fish("Poisson 1 "),
             new Dove("Colombe 2 ")];
 
 
+$zoo = new Zoo();
+
 foreach($animals as $animal)
 {
-    echo $animal->getName()."fait : ".$animal->Noise();
+    $zoo->addAnimal($animal);
 }
+
+$zoo->visitTheZoo();
+
+//echo
+
+/*foreach($animals as $animal)
+{
+    echo $animal->getName()."fait : ".$animal->Noise();
+}*/
