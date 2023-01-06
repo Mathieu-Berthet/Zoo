@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-class ClownFish extends Animal
+class ClownFish extends Animal implements CanSwim
 {
     protected function getNoise():string
     {
