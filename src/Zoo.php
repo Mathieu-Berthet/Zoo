@@ -49,16 +49,12 @@ class Zoo
         }
     }
 
-    //Affiche les animaux présents dans les enclos
+    //Affiche les animaux présents dans les enclos ainsi que leurs cris
     public function visitTheZoo():void
     {
         if(count($this->getFence()->animals) > 0)
         {
-            echo "L'enclos contient : \n";
-            foreach($this->getFence()->animals as $animal)
-            {
-                echo $this->getFence()->toString($animal);
-            }
+            echo "L'enclos contient : \n".self::$fence;
         }
         else
         {
@@ -67,11 +63,7 @@ class Zoo
 
         if(count($this->getAquarium()->animals) > 0)
         {
-            echo "L'aquarium contient : \n";
-            foreach($this->getAquarium()->animals as $animal)
-            {
-                echo $this->getAquarium()->toString($animal);
-            }
+            echo "L'aquarium contient : \n".self::$aquarium;
         }
         else
         {
@@ -80,11 +72,7 @@ class Zoo
 
         if(count($this->getAviary()->animals) > 0)
         {
-            echo "La volière contient : \n";
-            foreach($this->getAviary()->animals as $animal)
-            {
-                echo $this->getAviary()->toString($animal);
-            }
+            echo "La volière contient : \n".self::$aviary;
         }
         else
         {
