@@ -1,10 +1,10 @@
 <?php
-namespace App {
+namespace App;// {
     abstract class Animal
     {
-        private $name = "";
+        private string $name = "";
 
-        public function getName()
+        public function getName():string
         {
             return $this->name;
         }
@@ -22,7 +22,7 @@ namespace App {
         }
     }
 
-    class Fish extends Animal
+    /*class Fish extends Animal
     {
         protected function getNoise():string
         {
@@ -92,6 +92,6 @@ namespace App {
         {
             return "Rou rouuu \n";
         }
-    }
+    }*/
 
-}
+//}
